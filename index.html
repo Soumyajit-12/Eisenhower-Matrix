@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eisenhower Matrix</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- HEADING -->
+    <div class="sticky-md-top heading text-light bg-dark">
+        <h1>Eisenhower Matrix</h1>
+    </div>
+
+    <!-- INPUT BOX -->
+    <div class="input my-3">
+        <form id="myForm">
+            <div class="inputText">
+                <label for="Task"><b>Task:</b></label>
+                <input id="taskText" type="text" placeholder="Enter A Task" required>
+            </div>
+            <div>
+                <select class="form-select urgency" aria-label="Default select example">
+                    <!-- <option selected>--Urgency--</option> -->
+                    <option value="1">Urgent</option>
+                    <option value="2">Not Urgent</option>
+                </select>
+            </div>
+            <div>
+                <select class="form-select importance" aria-label="Default select example">
+                    <!-- <option selected>--Importance--</option> -->
+                    <option value="1">Important</option>
+                    <option value="2">Not Important</option>
+                </select>
+            </div>
+            <button type="submit" id="submit" class="btn submit">Add Task</button>
+        </form>
+    </div>
+
+    <!-- RESULTS -->
+    <div class="results my-5">
+
+        <div class="row1">
+            <div class="box do-list my-3 mx-3">
+                <div class="boxhead">
+                    <h2>Do :</h2>
+                    <p>Tasks which are <em>urgent</em> and <em>important</em></p>
+                </div>
+                <div class="boxbody">
+                    <ul id="tasks" class="list-group">
+                        <!-- <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li> -->
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="box decide-list my-3 mx-3">
+                <div class="boxhead">
+                    <h2>Decide :</h2>
+                    <p>Tasks which are <em>not urgent</em> but <em>important</em></p>
+                </div>
+                <div class="boxbody">
+                    <ul id="tasks" class="list-group">
+                        <!-- <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row2">
+            <div class="box delegate-list my-3 mx-3">
+                <div class="boxhead">
+                    <h2>Delegate :</h2>
+                    <p>Tasks which are <em>urgent</em> but <em>not important</em></p>
+                </div>
+                <div class="boxbody">
+                    <ul id="tasks" class="list-group">
+                        <!-- <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li> -->
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="box delete-list my-3 mx-3">
+                <div class="boxhead">
+                    <h2>Delete :</h2>
+                    <p>Tasks which are <em>neither urgent</em> <em>nor important</em></p>
+                </div>
+                <div class="boxbody">
+                    <ul id="tasks" class="list-group">
+                        <!-- <li class="list-group-item"></li>
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item"></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- QUOTE -->
+    <div class="quoteBox">
+        <i class="bi bi-caret-right-square-fill newIcon"></i>
+        <h2>Quote:</h2>
+        <div class="quotecontent">
+            <div class="quoteText">
+                <i class="bi bi-quote" style="float: left;"></i>
+                <hr>
+                <div class="quoteWritten">
+                    Wake up to reality! Nothing ever goes as planned in this world. The longer you live, the more you realize that in this reality, only pain, suffering, and futility exist.
+                </div>
+                <i class="bi bi-quote" style="float:right"></i>
+                <hr>
+            </div>
+            <div class="quoteauthor" style="float: right;">
+                -- <span>Madara Uchiha</span> 
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script src="brain.js"></script>  
+</body>
+
+</html>

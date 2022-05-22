@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.heading{
+    text-align: center;
+    height: 10vh;
+    padding-top: 10px;
+}
+.input{
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(190, 177, 177);
+    border-radius: 20px;
+    box-shadow: 0 4px 4px 0;
+}
+form{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    gap: 10px;
+}
+#taskText{
+    width: 90%;
+}
+#submit{
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+#submit:hover{
+    background-color: rgb(94, 89, 72);
+    color: rgb(255, 255, 255);
+}
+
+.results{
+    max-width: 80vw;
+    margin: auto;
+}
+.row1,.row2{
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    padding: 10px;
+    width: 50%;
+}
+
+.do-list{
+    color: green;
+    background-color: rgb(62, 172, 62);
+}
+.decide-list{
+    color: rgb(206, 206, 3);
+    background-color: rgb(182, 182, 60);
+}
+.delegate-list{
+    color: rgb(0, 0, 197);
+    background-color: rgb(102, 102, 218);
+}
+.delete-list{
+    color: red;
+    background-color: rgb(213, 31, 31);
+}
+
+
+.boxhead{
+    background-color: white;
+    text-align: center;
+}
+.boxhead em{
+    text-decoration: underline;
+}
+.boxbody{
+    word-wrap: break-word;
+}
+
+.quoteBox{
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(190, 177, 177);
+    border-radius: 20px;
+    box-shadow: 0 4px 4px 0;
+    margin-bottom: 20px;
+}
+.newIcon{
+    float: right;
+    cursor: pointer;
+}
+.newIcon:hover{
+    color: rgb(94, 89, 72);
+}
+
+.quoteauthor span{
+    margin: 10px;
+}
